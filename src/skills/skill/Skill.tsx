@@ -1,7 +1,8 @@
 import React from 'react';
-import style from './Skill.module.css'
+import style from './Skill.module.scss'
 
 type SkillPropsType = {
+    style: { backgroundImage: string }
     title: string
     description: string
 }
@@ -9,8 +10,8 @@ type SkillPropsType = {
 const Skill = (props: SkillPropsType) => {
     return (
         <div className={style.skill}>
-            <div className={style.icon}> </div>
-            <h3>{props.title}</h3>
+            <div className={style.icon} style={props.style}> </div>
+            <h3 className={style.skillTitle}>{props.title}</h3>
             <span className={style.description}>{props.description}</span>
         </div>
     );

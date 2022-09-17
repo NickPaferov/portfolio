@@ -1,0 +1,31 @@
+@import './../../common/styles/sass/variables';
+@import './../../common/styles/sass/mixins';
+
+.skill {
+  width: 250px;
+  background-color: $bgSecondColor;
+  @include flex(column, flex-start, center, wrap);
+  text-align: center;
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    @include bgSettings();
+    @include flex(column, center, center, wrap);
+  }
+
+  .skillTitle {
+    letter-spacing: 1px;
+    @include text($titleFontFamily, 16px, 1.2, 400)
+  }
+
+  .description {
+    width: 100%;
+    background-color: $bgSecondColor;
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+
+    @include text($textFontFamily, 12px, 1.8, 400)
+  }
+}

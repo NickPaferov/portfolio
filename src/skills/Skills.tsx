@@ -1,19 +1,29 @@
 import React from 'react';
-import style from './Skills.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import style from './Skills.module.scss'
 import Skill from "./skill/Skill";
+import Title from "../common/components/title/Title";
+import jsTsImage from "../assets/images/jsTs.jpg";
+import reactImage from "../assets/images/react.jpg";
+import reduxImage from "../assets/images/redux.jpg";
 
 const Skills = () => {
+    const jsTsStyle = {
+        backgroundImage: `url(${jsTsImage})`
+    }
+    const reactStyle = {
+        backgroundImage: `url(${reactImage})`
+    }
+    const reduxStyle = {
+        backgroundImage: `url(${reduxImage})`
+    }
     return (
         <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
-                <h2 className={style.title}>Skills</h2>
+            <div className={style.skillsContainer}>
+                <Title text={"Skills"}/>
                 <div className={style.skills}>
-                    {/*<Skill title={"HTML"} description={"HyperText Markup Language"}/>*/}
-                    {/*<Skill title={"CSS"} description={"Cascading Style Sheets"}/>*/}
-                    <Skill title={"JS/TS"} description={"JavaScript/TypeScript"}/>
-                    <Skill title={"React"} description={"React is a JavaScript library for building user interfaces"}/>
-                    <Skill title={"Redux"} description={"Redux is a predictable state container for JavaScript apps"}/>
+                    <Skill style={jsTsStyle} title={"JS/TS"} description={"JavaScript and TypeScript"}/>
+                    <Skill style={reactStyle} title={"React"} description={"React is a JavaScript library for building user interfaces"}/>
+                    <Skill style={reduxStyle} title={"Redux"} description={"Redux is a predictable state container for JavaScript apps"}/>
                 </div>
             </div>
         </div>

@@ -1,0 +1,23 @@
+@import './../../common/styles/sass/variables';
+@import './../../common/styles/sass/mixins';
+
+.platformContainer {
+  margin: 10px;
+  @include flex(column, center, center, wrap);
+
+  .socialIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    @include bgSettings();
+  }
+
+  .platform {
+    margin-top: 5px;
+    @include text($titleFontFamily, 14px, 1.2, 400);
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}

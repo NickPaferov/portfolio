@@ -1,20 +1,23 @@
 import React from 'react';
-import style from './Project.module.css'
+import Button from '../../common/components/button/Button';
+import style from './Project.module.scss'
 
 type ProjectPropsType = {
+    style: { backgroundImage: string }
     title: string
     description: string
+    link: string
 }
 
 const Project = (props: ProjectPropsType) => {
     return (
         <div className={style.project}>
-            <div className={style.imageContainer}>
-            <button className={style.button}>Show</button>
+            <div className={style.image} style={props.style}>
+                <Button source={props.link} text={"View"}/>
             </div>
-            <div className={style.descriptionBlock}>
-                <h3 className={style.title}>{props.title}</h3>
-                <div className={style.description}>{props.description}</div>
+            <div className={style.projectInfo}>
+                <h3 className={style.projectTitle}>{props.title}</h3>
+                <span className={style.description}>{props.description}</span>
             </div>
         </div>
     );

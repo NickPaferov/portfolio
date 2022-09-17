@@ -1,0 +1,15 @@
+@import './../common/styles/sass/variables.scss';
+@import './../common/styles/sass/mixins.scss';
+
+.navigation {
+  width: 300px;
+  @include flex(row, space-around, center, wrap);
+
+  .link {
+    @include text($titleFontFamily, 18px, 1.2, 400);
+  }
+
+  &:hover {
+    color: $primaryColor;
+  }
+}
