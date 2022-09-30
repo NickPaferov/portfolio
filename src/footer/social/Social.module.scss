@@ -2,14 +2,19 @@
 @import './../../common/styles/sass/mixins';
 
 .platformContainer {
-  margin: 10px;
   @include flex(column, center, center, wrap);
+  margin: 10px;
+  flex-basis: 42%;
 
   .socialIcon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     @include bgSettings();
+    &:hover {
+    width: 70px;
+    height: 70px;
+  }
   }
 
   .platform {

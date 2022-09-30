@@ -11,7 +11,7 @@ type SocialPropsType = {
 const Social = (props: SocialPropsType) => {
     return (
         <div className={style.platformContainer}>
-            <div className={style.socialIcon} style={props.style}> </div>
+            <a className={style.socialIcon} style={props.style} href={props.link}> </a>
             <a className={style.platform} href={props.link}>{props.platform}</a>
         </div>
     );

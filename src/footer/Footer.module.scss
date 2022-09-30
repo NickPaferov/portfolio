@@ -13,10 +13,11 @@
 
     .socialIcons {
       @include flex(row, space-between, center, nowrap);
-      width: 400px;
+      max-width: 400px;
+      width: 100%;
       margin-top: 30px;
       @media screen and (max-width: 450px) {
-        @include flex(column, center, center, wrap);
+        @include flex(row, center, center, wrap);
       }
     }
 

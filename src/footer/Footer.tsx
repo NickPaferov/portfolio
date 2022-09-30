@@ -33,7 +33,7 @@ const Footer = () => {
                     <Social style={gitHubStyle} platform={"GitHub"}
                             link={"https://github.com/NickPaferov"}/>
                     <Social style={telegramStyle} platform={"Telegram"}
-                            link={"@NickPaferov"}/>
+                            link={"https://t.me/NickPaferov"}/>
                 </div>
                 <span className={style.copyRight}>© 2022 All rights reserved</span>
             </div>

@@ -4,6 +4,7 @@
 .project {
   background-color: $bgSecondColor;
   width: 425px;
+  margin-bottom: 30px;
   @include flex(column, center, flex-start, wrap);
 
   .image {
