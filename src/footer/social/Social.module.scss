@@ -18,6 +18,7 @@
   }
 
   .platform {
+    text-decoration: none;
     margin-top: 5px;
     @include text($titleFontFamily, 14px, 1.2, 400);
 

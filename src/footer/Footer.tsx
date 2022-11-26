@@ -6,6 +6,7 @@ import gitHubImage from './../assets/images/github.png'
 import telegramImage from './../assets/images/telegram.jpg'
 import Social from "./social/Social";
 import Title from '../common/components/title/Title';
+import { Fade } from 'react-awesome-reveal';
 
 const Footer = () => {
     const codewarsStyle = {
@@ -25,16 +26,18 @@ const Footer = () => {
         <div className={style.footer}>
             <div className={style.footerContainer}>
                 <Title text={"Nikolai Paferov"}/>
-                <div className={style.socialIcons}>
-                    <Social style={codewarsStyle} platform={"Codewars"}
-                            link={"https://www.codewars.com/users/NickPaferov"}/>
-                    <Social style={freeCodeCampStyle} platform={"FCC"}
-                            link={"https://www.freecodecamp.org/NickPaferov"}/>
-                    <Social style={gitHubStyle} platform={"GitHub"}
-                            link={"https://github.com/NickPaferov"}/>
-                    <Social style={telegramStyle} platform={"Telegram"}
-                            link={"https://t.me/NickPaferov"}/>
-                </div>
+                    <div className={style.socialIcons}>
+                <Fade direction={"down"}>
+                        <Social style={codewarsStyle} platform={"Codewars"}
+                                link={"https://www.codewars.com/users/NickPaferov"}/>
+                        <Social style={freeCodeCampStyle} platform={"FCC"}
+                                link={"https://www.freecodecamp.org/NickPaferov"}/>
+                        <Social style={gitHubStyle} platform={"GitHub"}
+                                link={"https://github.com/NickPaferov"}/>
+                        <Social style={telegramStyle} platform={"Telegram"}
+                                link={"https://t.me/NickPaferov"}/>
+                </Fade>
+                    </div>
                 <span className={style.copyRight}>© 2022 All rights reserved</span>
             </div>
         </div>

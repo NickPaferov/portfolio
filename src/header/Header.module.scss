@@ -3,7 +3,16 @@
 
 .header {
   height: 80px;
+  padding: 0 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: $bgSecondColor;
   @include flex(row, flex-end, center, wrap);
+  opacity: 0.9;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  @media screen and (max-width: 400px) {
+    justify-content: center;
+  }
 }

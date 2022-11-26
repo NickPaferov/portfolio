@@ -14,7 +14,7 @@
       width: 100%;
       @include flex(row, space-between, flex-start, wrap);
       box-sizing: border-box;
-      @media screen and (max-width: 1072px) {
+      @media screen and (max-width: 1090px) {
         @include flex(column, center, center, wrap);
       }
     }

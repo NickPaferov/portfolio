@@ -2,14 +2,24 @@
 @import './../common/styles/sass/mixins.scss';
 
 .navigation {
-  width: 300px;
+  width: 340px;
   @include flex(row, space-around, center, wrap);
 
   .link {
     @include text($titleFontFamily, 18px, 1.2, 400);
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $primaryColor;
+    }
   }
 
-  &:hover {
+  .active {
     color: $primaryColor;
+  }
+
+  @media screen and (max-width: 400px) {
+    display: none;
   }
 }

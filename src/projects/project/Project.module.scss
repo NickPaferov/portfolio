@@ -25,19 +25,6 @@
       opacity: 0.4;
     }
 
-    .viewBtn {
-      position: relative;
-      border-radius: 10px;
-      background-color: $bgSecondColor;
-      color: $textColor;
-      font-family: $titleFontFamily;
-      font-size: 20px;
-      letter-spacing: 2px;
-      width: 25%;
-      height: 25%;
-      @include flex(row, center, center, wrap);
-    }
-
     &:hover {
       color: $primaryColor;
     }
@@ -57,5 +44,9 @@
     .description {
       @include text($textFontFamily, 12px, 1.8, 400);
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 300px;
   }
 }
