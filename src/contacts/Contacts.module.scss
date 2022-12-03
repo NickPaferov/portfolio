@@ -17,6 +17,32 @@
         width: 100%;
       }
 
+      .offer {
+        @include flex(column, center, center, nowrap);
+
+        .notification {
+          @include flex(column, center, center, nowrap);
+          height: 195px;
+          width: 100%;
+          @include text(inherit, 16px, 1.5, 400);
+          border: 1px solid #4a4a4a;
+          box-sizing: border-box;
+          background-color: $bgColor;
+          color: #717175;
+          text-align: center;
+          margin-bottom: 19px;
+        }
+
+        button {
+          @extend .btn;
+          align-self: center;
+          background-color: transparent;
+          margin-top: 30px;
+          cursor: pointer;
+        }
+
+      }
+
       .contactForm {
         @include flex(column, flex-start, stretch, nowrap);
 
@@ -25,20 +51,19 @@
           background-color: $bgColor;
           border: 1px solid #4a4a4a;
           box-sizing: border-box;
-          @include text(inherit, 12px, 1.5, 400);
+          @include text(inherit, 16px, 1.5, 400);
           outline: none;
-          color: #495057;
+          color: #717175;
           margin-bottom: 1.2rem;
 
           &:-webkit-autofill {
             border: 1px solid #4a4a4a;
-            -webkit-text-fill-color: #495057;
-            -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+            -webkit-text-fill-color: #717175;
+            -webkit-box-shadow: 0 0 0 1000px $bgColor inset;
             transition: background-color 5000s ease-in-out 0s;
 
             &focus {
               border: 2px solid $bgColor;
-
             }
           }
         }
