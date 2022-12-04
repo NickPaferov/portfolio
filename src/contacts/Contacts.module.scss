@@ -17,14 +17,14 @@
         width: 100%;
       }
 
-      .offer {
+      .notificationForm {
         @include flex(column, center, center, nowrap);
 
         .notification {
           @include flex(column, center, center, nowrap);
-          height: 195px;
+          height: 206px;
           width: 100%;
-          @include text(inherit, 16px, 1.5, 400);
+          @include text(inherit, 18px, 1.5, 400);
           border: 1px solid #4a4a4a;
           box-sizing: border-box;
           background-color: $bgColor;
@@ -33,12 +33,30 @@
           margin-bottom: 19px;
         }
 
-        button {
+        .activeBtn {
           @extend .btn;
           align-self: center;
           background-color: transparent;
           margin-top: 30px;
           cursor: pointer;
+        }
+
+        .disabledBtn {
+          @extend .btn;
+          align-self: center;
+          background-color: transparent;
+          margin-top: 30px;
+          cursor: pointer;
+          color: #717175;
+
+          &:hover {
+            color: #717175;
+
+            &::after {
+              width: 50%;
+              height: 10px;
+            }
+          }
         }
 
       }
@@ -51,7 +69,7 @@
           background-color: $bgColor;
           border: 1px solid #4a4a4a;
           box-sizing: border-box;
-          @include text(inherit, 16px, 1.5, 400);
+          @include text(inherit, 18px, 1.5, 400);
           outline: none;
           color: #717175;
           margin-bottom: 1.2rem;
@@ -97,7 +115,6 @@
           cursor: pointer;
         }
       }
-
     }
   }
 }
