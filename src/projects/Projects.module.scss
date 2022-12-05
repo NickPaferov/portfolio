@@ -10,7 +10,7 @@
     @include flex(column, center, center, wrap);
 
     .projects {
-      margin-top: 30px;
+      margin-top: 40px;
       width: 100%;
       @include flex(row, space-between, flex-start, wrap);
       box-sizing: border-box;
