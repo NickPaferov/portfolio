@@ -5,7 +5,7 @@ import {Fade} from 'react-awesome-reveal';
 import * as yup from "yup";
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
-import axios from 'axios';
+import {api} from "../api/api";
 
 interface IFormInputs {
     name: string
@@ -33,7 +33,7 @@ const Contacts = () => {
         setNotification("Letter is sending...")
         setIsDisabled(true)
         try {
-            await axios.post("http://localhost:3010/sendMessage", {name, email, messageText})
+            await api.sendMessage(name, email, messageText)
             setNotification("Your message has been sent. I will answer you when I find time.")
             reset()
         } catch (error: any) {
