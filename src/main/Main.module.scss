@@ -5,7 +5,6 @@
   height: 100vh;
   background-color: $bgColor;
   @include flex(row, center, center, nowrap);
-  padding: 100px 0;
 
   .fadeWrapper {
     @include container();
