@@ -12,7 +12,7 @@
     .projects {
       margin-top: 40px;
       width: 100%;
-      @include flex(row, space-between, flex-start, wrap);
+      @include flex(row, space-around, flex-start, wrap);
       box-sizing: border-box;
       @media screen and (max-width: 1215px) {
         justify-content: center;

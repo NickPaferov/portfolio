@@ -4,26 +4,54 @@ import Project from './project/Project';
 import Title from '../common/components/title/Title';
 import counterImage from './../assets/images/counter.jpg';
 import todoImage from './../assets/images/todolist.jpg';
+import cardsImage from './../assets/images/cards.jpg';
 import {Fade} from 'react-awesome-reveal';
+import {v1} from 'uuid';
 
 const Projects = () => {
-    const counterStyle = {
-        backgroundImage: `url(${counterImage})`
-    }
-    const todolistStyle = {
-        backgroundImage: `url(${todoImage})`
-    }
+
+    const projects = [
+        {
+            id: v1(),
+            title: "Counter",
+            description: "Simple application with settings",
+            link: "https://nickpaferov.github.io/Counter",
+            style: {
+                backgroundImage: `url(${counterImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Todolist",
+            description: "Manage projects and organize tasks — all in one place",
+            link: "https://nickpaferov.github.io/todolist",
+            style: {
+                backgroundImage: `url(${todoImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Cards",
+            description: "Answer questions and gain new knowledge",
+            link: "https://nickpaferov.github.io/learning-cards",
+            style: {
+                backgroundImage: `url(${cardsImage})`
+            }
+        }
+    ]
+
     return (
         <div id={"projects"} className={style.projectsBlock}>
             <div className={style.projectsContainer}>
                 <Title text={"Projects"}/>
                 <div className={style.projects}>
                     <Fade direction={"down"}>
-                        <Project style={counterStyle} title={"Counter"} description={"Simple application with settings"}
-                                 link={"https://nickpaferov.github.io/Counter/"}/>
-                        <Project style={todolistStyle} title={"Todolist"}
-                                 description={"Customize and expand with more features. Manage projects and organize tasks — all in one place"}
-                                 link={"https://nickpaferov.github.io/todolist/"}/>
+                        {projects.map(project =>
+                            <Project key={project.id}
+                                     style={project.style}
+                                     title={project.title}
+                                     description={project.description}
+                                     link={project.link}/>)}
                     </Fade>
                 </div>
             </div>
