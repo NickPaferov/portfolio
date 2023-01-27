@@ -12,7 +12,7 @@
     .skills {
       margin-top: 40px;
       width: 100%;
-      @include flex(row, space-between, flex-start, wrap);
+      @include flex(row, center, flex-start, wrap);
       box-sizing: border-box;
       @media screen and (max-width: 1090px) {
         @include flex(column, center, center, wrap);
