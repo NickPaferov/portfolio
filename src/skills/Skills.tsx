@@ -12,9 +12,10 @@ import reactHookFormImage from "../assets/images/reactHookForm.png";
 import formikImage from "../assets/images/formik.jpg";
 import htmlImage from "../assets/images/html5.png";
 import cssImage from "../assets/images/css3.png";
+import muiImage from "../assets/images/mui.png";
+import storybookImage from "../assets/images/storybook.png";
 import gitImage from "../assets/images/git.png";
 import vercelImage from "../assets/images/vercel.png";
-import muiImage from "../assets/images/mui.png";
 import {Fade} from 'react-awesome-reveal';
 import {v1} from 'uuid';
 
@@ -107,6 +108,14 @@ const Skills = () => {
             description: "Material UI is an open-source React component library that implements Google's Material Design",
             style: {
                 backgroundImage: `url(${muiImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Storybook",
+            description: "Storybook is a frontend workshop for building UI components and pages in isolation",
+            style: {
+                backgroundImage: `url(${storybookImage})`
             }
         },
         {
