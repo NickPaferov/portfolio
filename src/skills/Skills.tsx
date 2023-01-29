@@ -10,10 +10,12 @@ import axiosImage from "../assets/images/axios.png";
 import restApiImage from "../assets/images/restAPI.png";
 import reactHookFormImage from "../assets/images/reactHookForm.png";
 import formikImage from "../assets/images/formik.jpg";
+import reactRouterDomImage from "../assets/images/reactRouterDom.png";
 import htmlImage from "../assets/images/html5.png";
 import cssImage from "../assets/images/css3.png";
 import muiImage from "../assets/images/mui.png";
 import storybookImage from "../assets/images/storybook.png";
+import postmanImage from "../assets/images/postman.png";
 import gitImage from "../assets/images/git.png";
 import vercelImage from "../assets/images/vercel.png";
 import {Fade} from 'react-awesome-reveal';
@@ -72,6 +74,14 @@ const Skills = () => {
         },
         {
             id: v1(),
+            title: "Postman",
+            description: "Postman is an API platform for building and using APIs",
+            style: {
+                backgroundImage: `url(${postmanImage})`
+            }
+        },
+        {
+            id: v1(),
             title: "React Hook Form",
             description: "React Hook Form is a library that helps you validate forms in React",
             style: {
@@ -87,6 +97,13 @@ const Skills = () => {
             }
         },
         {
+            id: v1(),
+            title: "React Router DOM",
+            description: "React Router DOM is an npm package that enables you to implement dynamic routing in a web app",
+            style: {
+                backgroundImage: `url(${reactRouterDomImage})`
+            }
+        }, {
             id: v1(),
             title: "HTML5",
             description: "HTML is the standard markup language for documents designed to be displayed in a web browser",
