@@ -37,7 +37,7 @@
       @include text($titleFontFamily, 16px, 1.2, 400);
       letter-spacing: 1px;
       margin: 0 0 5px;
-      width: min-content;
+      width: inherit;
 
     }
 

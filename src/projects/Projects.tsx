@@ -2,8 +2,8 @@ import React from 'react';
 import style from './Projects.module.scss'
 import Project from './project/Project';
 import Title from '../common/components/title/Title';
-import counterImage from './../assets/images/counter.jpg';
-import todoImage from './../assets/images/todolist.jpg';
+import socialNetworkImage from './../assets/images/social-network.jpg';
+import todoImage from './../assets/images/todolist.png';
 import cardsImage from './../assets/images/cards.jpg';
 import {Fade} from 'react-awesome-reveal';
 import {v1} from 'uuid';
@@ -13,11 +13,11 @@ const Projects = () => {
     const projects = [
         {
             id: v1(),
-            title: "Counter",
-            description: "Simple application with settings",
-            link: "https://nickpaferov.github.io/Counter",
+            title: "Social network",
+            description: "Media platform to get and stay connected with friends",
+            link: "https://nickpaferov.github.io/social-network/",
             style: {
-                backgroundImage: `url(${counterImage})`
+                backgroundImage: `url(${socialNetworkImage})`
             }
         },
         {
