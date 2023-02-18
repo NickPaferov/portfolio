@@ -4,6 +4,7 @@ import codeWarsImage from './../assets/images/codewars.png'
 import freeCodeCampImage from './../assets/images/freecodecamp.jpg'
 import gitHubImage from './../assets/images/github.png'
 import telegramImage from './../assets/images/telegram.jpg'
+import linkedInImage from './../assets/images/linkedIn.png'
 import Social from "./social/Social";
 import Title from '../common/components/title/Title';
 import {Fade} from 'react-awesome-reveal';
@@ -44,7 +45,14 @@ const Footer = () => {
                 backgroundImage: `url(${telegramImage})`
             }
         },
-
+        {
+            id: v1(),
+            platform: "LinkedIn",
+            link: "https://www.linkedin.com/in/nikolai-paferov-30245a252",
+            style: {
+                backgroundImage: `url(${linkedInImage})`
+            }
+        }
     ]
 
     return (

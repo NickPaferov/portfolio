@@ -12,7 +12,7 @@
 
     .socialIcons {
       @include flex(row, center, center, wrap);
-      max-width: 400px;
+      max-width: 500px;
       width: 100%;
       margin-top: 30px;
       @media screen and (max-width: 450px) {
