@@ -2,9 +2,10 @@ import React from 'react';
 import style from './Projects.module.scss'
 import Project from './project/Project';
 import Title from '../common/components/title/Title';
-import socialNetworkImage from './../assets/images/social-network.jpg';
-import todoImage from './../assets/images/todolist.png';
 import cardsImage from './../assets/images/cards.jpg';
+import repositoriesImage from './../assets/images/repositories.jpg';
+import todoImage from './../assets/images/todolist.png';
+import socialNetworkImage from './../assets/images/social-network.jpg';
 import {Fade} from 'react-awesome-reveal';
 import {v1} from 'uuid';
 
@@ -13,14 +14,22 @@ const Projects = () => {
     const projects = [
         {
             id: v1(),
-            title: "Social network",
-            description: "Media platform to get and stay connected with friends",
-            link: "https://nickpaferov.github.io/social-network/",
+            title: "Learning cards",
+            description: "Answer questions and gain new knowledge",
+            link: "https://nickpaferov.github.io/learning-cards",
             style: {
-                backgroundImage: `url(${socialNetworkImage})`
+                backgroundImage: `url(${cardsImage})`
             }
         },
         {
+            id: v1(),
+            title: "Git repositories",
+            description: "Application for searching a repository on GitHub",
+            link: "https://nickpaferov.github.io/git-repositories",
+            style: {
+                backgroundImage: `url(${repositoriesImage})`
+            }
+        }, {
             id: v1(),
             title: "Todolist",
             description: "Manage projects and organize tasks — all in one place",
@@ -31,13 +40,13 @@ const Projects = () => {
         },
         {
             id: v1(),
-            title: "Cards",
-            description: "Answer questions and gain new knowledge",
-            link: "https://nickpaferov.github.io/learning-cards",
+            title: "Social network",
+            description: "Media platform to get and stay connected with friends",
+            link: "https://nickpaferov.github.io/social-network/",
             style: {
-                backgroundImage: `url(${cardsImage})`
+                backgroundImage: `url(${socialNetworkImage})`
             }
-        }
+        },
     ]
 
     return (

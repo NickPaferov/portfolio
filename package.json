@@ -17,7 +17,7 @@
     "@types/react-typing-effect": "^2.0.3",
     "@types/uuid": "^9.0.0",
     "axios": "^1.2.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "^8.0.0",
     "react": "^18.1.0",
     "react-awesome-reveal": "^4.1.0",
     "react-dom": "^18.1.0",
