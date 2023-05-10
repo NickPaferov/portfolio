@@ -6,6 +6,7 @@ import jsImage from "../assets/images/js.jpg";
 import tsImage from "../assets/images/ts.jpg";
 import reactImage from "../assets/images/react.png";
 import reduxImage from "../assets/images/redux.jpg";
+import mobXImage from "../assets/images/mobX.png";
 import axiosImage from "../assets/images/axios.png";
 import restApiImage from "../assets/images/restAPI.png";
 import reactHookFormImage from "../assets/images/reactHookForm.png";
@@ -54,6 +55,14 @@ const Skills = () => {
             description: "Redux is a predictable state container for JavaScript apps",
             style: {
                 backgroundImage: `url(${reduxImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "MobX",
+            description: "MobX is a simple, scalable and battle tested state management solution",
+            style: {
+                backgroundImage: `url(${mobXImage})`
             }
         },
         {
