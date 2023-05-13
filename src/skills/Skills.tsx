@@ -15,6 +15,7 @@ import reactRouterDomImage from "../assets/images/reactRouterDom.png";
 import htmlImage from "../assets/images/html5.png";
 import cssImage from "../assets/images/css3.png";
 import muiImage from "../assets/images/mui.png";
+import reactBootstrap from "../assets/images/reactBootstrap.png";
 import storybookImage from "../assets/images/storybook.png";
 import postmanImage from "../assets/images/postman.png";
 import gitImage from "../assets/images/git.png";
@@ -134,6 +135,14 @@ const Skills = () => {
             description: "Material UI is an open-source React component library that implements Google's Material Design",
             style: {
                 backgroundImage: `url(${muiImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "React-Bootstrap",
+            description: "React-Bootstrap is a complete re-implementation of the Bootstrap components using React",
+            style: {
+                backgroundImage: `url(${reactBootstrap})`
             }
         },
         {
