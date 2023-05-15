@@ -14,8 +14,9 @@ import formikImage from "../assets/images/formik.jpg";
 import reactRouterDomImage from "../assets/images/reactRouterDom.png";
 import htmlImage from "../assets/images/html5.png";
 import cssImage from "../assets/images/css3.png";
+import styledComponentsImage from "../assets/images/styledComponents.png";
 import muiImage from "../assets/images/mui.png";
-import reactBootstrap from "../assets/images/reactBootstrap.png";
+import reactBootstrapImage from "../assets/images/reactBootstrap.png";
 import storybookImage from "../assets/images/storybook.png";
 import postmanImage from "../assets/images/postman.png";
 import gitImage from "../assets/images/git.png";
@@ -131,6 +132,14 @@ const Skills = () => {
         },
         {
             id: v1(),
+            title: "Styled Components",
+            description: "Styled Components is a popular library that is used to style React applications",
+            style: {
+                backgroundImage: `url(${styledComponentsImage})`
+            }
+        },
+        {
+            id: v1(),
             title: "Material UI",
             description: "Material UI is an open-source React component library that implements Google's Material Design",
             style: {
@@ -142,7 +151,7 @@ const Skills = () => {
             title: "React-Bootstrap",
             description: "React-Bootstrap is a complete re-implementation of the Bootstrap components using React",
             style: {
-                backgroundImage: `url(${reactBootstrap})`
+                backgroundImage: `url(${reactBootstrapImage})`
             }
         },
         {
