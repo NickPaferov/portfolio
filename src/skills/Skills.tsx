@@ -21,6 +21,7 @@ import storybookImage from "../assets/images/storybook.png";
 import postmanImage from "../assets/images/postman.png";
 import gitImage from "../assets/images/git.png";
 import vercelImage from "../assets/images/vercel.png";
+import dockerImage from "../assets/images/docker.png";
 import {Fade} from 'react-awesome-reveal';
 import {v1} from 'uuid';
 
@@ -177,7 +178,15 @@ const Skills = () => {
             style: {
                 backgroundImage: `url(${vercelImage})`
             }
-        }
+        },
+        {
+            id: v1(),
+            title: "Docker",
+            description: "Docker is an open platform for developing, shipping, and running applications",
+            style: {
+                backgroundImage: `url(${dockerImage})`
+            }
+        },
     ]
 
     return (
