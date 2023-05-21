@@ -22,6 +22,7 @@ import postmanImage from "../assets/images/postman.png";
 import gitImage from "../assets/images/git.png";
 import vercelImage from "../assets/images/vercel.png";
 import dockerImage from "../assets/images/docker.png";
+import webSocketImage from "../assets/images/webSocket.png";
 import {Fade} from 'react-awesome-reveal';
 import {v1} from 'uuid';
 
@@ -185,6 +186,14 @@ const Skills = () => {
             description: "Docker is an open platform for developing, shipping, and running applications",
             style: {
                 backgroundImage: `url(${dockerImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "WebSocket",
+            description: "WebSocket is a computer communications protocol, providing full-duplex communication channels over a single TCP connection",
+            style: {
+                backgroundImage: `url(${webSocketImage})`
             }
         },
     ]
