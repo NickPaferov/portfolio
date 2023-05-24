@@ -23,6 +23,7 @@ import gitImage from "../assets/images/git.png";
 import vercelImage from "../assets/images/vercel.png";
 import dockerImage from "../assets/images/docker.png";
 import webSocketImage from "../assets/images/webSocket.png";
+import socketIoImage from "../assets/images/socketIO.png";
 import {Fade} from 'react-awesome-reveal';
 import {v1} from 'uuid';
 
@@ -194,6 +195,14 @@ const Skills = () => {
             description: "WebSocket is a computer communications protocol, providing full-duplex communication channels over a single TCP connection",
             style: {
                 backgroundImage: `url(${webSocketImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Socket.IO",
+            description: "Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server",
+            style: {
+                backgroundImage: `url(${socketIoImage})`
             }
         },
     ]
