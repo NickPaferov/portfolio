@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Projects.module.scss'
 import Project from './project/Project';
 import Title from '../common/components/title/Title';
+import logisticsImage from './../assets/images/logistics.jpg';
 import cardsImage from './../assets/images/cards.jpg';
 import repositoriesImage from './../assets/images/repositories.jpg';
 import todoImage from './../assets/images/todolist.png';
@@ -12,6 +13,15 @@ import {v1} from 'uuid';
 const Projects = () => {
 
     const projects = [
+        {
+            id: v1(),
+            title: "Logistics",
+            description: "Cartographic application for logistics routes building",
+            link: "https://nickpaferov.github.io/logistics",
+            style: {
+                backgroundImage: `url(${logisticsImage})`
+            }
+        },
         {
             id: v1(),
             title: "Learning cards",
