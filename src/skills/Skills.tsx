@@ -16,6 +16,7 @@ import htmlImage from "../assets/images/html5.png";
 import cssImage from "../assets/images/css3.png";
 import styledComponentsImage from "../assets/images/styledComponents.png";
 import muiImage from "../assets/images/mui.png";
+import antDesignImage from "../assets/images/antDesign.png";
 import reactBootstrapImage from "../assets/images/reactBootstrap.png";
 import storybookImage from "../assets/images/storybook.png";
 import postmanImage from "../assets/images/postman.png";
@@ -147,6 +148,14 @@ const Skills = () => {
             description: "Material UI is an open-source React component library that implements Google's Material Design",
             style: {
                 backgroundImage: `url(${muiImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Ant Design",
+            description: "Ant Design is a UI component library allowing developers to quickly create beautiful and functional user interfaces for web applications",
+            style: {
+                backgroundImage: `url(${antDesignImage})`
             }
         },
         {
