@@ -25,6 +25,7 @@ import vercelImage from "../assets/images/vercel.png";
 import dockerImage from "../assets/images/docker.png";
 import webSocketImage from "../assets/images/webSocket.png";
 import socketIoImage from "../assets/images/socketIO.png";
+import reactLeafletImage from "../assets/images/reactLeaflet.png";
 import {Fade} from 'react-awesome-reveal';
 import {v1} from 'uuid';
 
@@ -212,6 +213,14 @@ const Skills = () => {
             description: "Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server",
             style: {
                 backgroundImage: `url(${socketIoImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "React Leaflet",
+            description: "React Leaflet is an open-source Javascript library for creating maps",
+            style: {
+                backgroundImage: `url(${reactLeafletImage})`
             }
         },
     ]

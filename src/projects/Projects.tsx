@@ -16,7 +16,7 @@ const Projects = () => {
         {
             id: v1(),
             title: "Logistics",
-            description: "Cartographic application for logistics routes building",
+            description: "Mapping application for logistics routes building",
             link: "https://nickpaferov.github.io/logistics",
             style: {
                 backgroundImage: `url(${logisticsImage})`
