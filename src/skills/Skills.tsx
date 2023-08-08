@@ -14,6 +14,7 @@ import formikImage from "../assets/images/formik.jpg";
 import reactRouterDomImage from "../assets/images/reactRouterDom.png";
 import htmlImage from "../assets/images/html5.png";
 import cssImage from "../assets/images/css3.png";
+import sassImage from "../assets/images/sass.jpg"
 import styledComponentsImage from "../assets/images/styledComponents.png";
 import muiImage from "../assets/images/mui.png";
 import antDesignImage from "../assets/images/antDesign.png";
@@ -133,6 +134,14 @@ const Skills = () => {
             description: "CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML",
             style: {
                 backgroundImage: `url(${cssImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Sass",
+            description: "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world",
+            style: {
+                backgroundImage: `url(${sassImage})`
             }
         },
         {
