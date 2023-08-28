@@ -5,6 +5,7 @@ import Title from "../common/components/title/Title";
 import jsImage from "../assets/images/js.jpg";
 import tsImage from "../assets/images/ts.jpg";
 import reactImage from "../assets/images/react.png";
+import nextJsImage from "../assets/images/nextJS.png";
 import reduxImage from "../assets/images/redux.jpg";
 import mobXImage from "../assets/images/mobX.png";
 import axiosImage from "../assets/images/axios.png";
@@ -55,6 +56,14 @@ const Skills = () => {
             description: "React is a JavaScript library for building user interfaces",
             style: {
                 backgroundImage: `url(${reactImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Next.js",
+            description: "Next.js is a React framework for building full-stack web applications",
+            style: {
+                backgroundImage: `url(${nextJsImage})`
             }
         },
         {
