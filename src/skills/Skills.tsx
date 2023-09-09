@@ -8,6 +8,7 @@ import reactImage from "../assets/images/react.png";
 import nextJsImage from "../assets/images/nextJS.png";
 import reduxImage from "../assets/images/redux.jpg";
 import mobXImage from "../assets/images/mobX.png";
+import zustandImage from "../assets/images/zustand.jpg";
 import axiosImage from "../assets/images/axios.png";
 import restApiImage from "../assets/images/restAPI.png";
 import reactHookFormImage from "../assets/images/reactHookForm.png";
@@ -80,6 +81,14 @@ const Skills = () => {
             description: "MobX is a simple, scalable and battle tested state management solution",
             style: {
                 backgroundImage: `url(${mobXImage})`
+            }
+        },
+        {
+            id: v1(),
+            title: "Zustand",
+            description: "Zustand is small, fast and scalable state-management solution using simplified flux principles",
+            style: {
+                backgroundImage: `url(${zustandImage})`
             }
         },
         {
